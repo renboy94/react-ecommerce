@@ -15,13 +15,16 @@ const CartDropdown = ({ cartItems, history, dispatch }) => (
     <CartItemsContainer>
       {cartItems.length ? (
         cartItems.map(cartItem => (
-          <CartItem key={cartItem.id} item={cartItem} />
+          <CartItem data-test="CartItem" key={cartItem.id} item={cartItem} />
         ))
       ) : (
-        <EmptyMessageContainer>Your cart is empty</EmptyMessageContainer>
+        <EmptyMessageContainer data-test="EmptyMessage">
+          Your cart is empty
+        </EmptyMessageContainer>
       )}
     </CartItemsContainer>
     <CartDropdownButton
+      data-test="CartDropdownButton"
       onClick={() => {
         history.push("/checkout");
         dispatch(toggleCartHidden());

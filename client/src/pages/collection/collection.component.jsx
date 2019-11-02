@@ -11,7 +11,7 @@ import {
   CollectionItemsContainer
 } from "./collection.styles";
 
-const CollectionPage = ({ collection }) => {
+export const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
   return (
     <CollectionPageContainer>
@@ -25,8 +25,6 @@ const CollectionPage = ({ collection }) => {
   );
 };
 
-// ownProps is the props of the component being wrapped in the connect
-// Unlike other selectors, this selector needs a part of the state depending on the URL parameter!
 const mapStateToProps = (state, ownProps) => ({
   collection: selectCollection(ownProps.match.params.collectionId)(state)
 });
