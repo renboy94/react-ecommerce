@@ -15,5 +15,4 @@ beforeEach(() => {
 it("should render CheckoutPage component", () => {
   expect(wrapper).toMatchSnapshot();
   const length = wrapper.length;
-  console.log(length);
 });
