@@ -52,7 +52,7 @@ describe("userReducer", () => {
 
     expect(
       userReducer(initialState, {
-        type: UserActionTypes.SIGN_IN_SUCCESS,
+        type: UserActionTypes.SIGN_OUT_FAILURE,
         payload: mockError
       }).error
     ).toBe(mockError);
