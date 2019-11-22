@@ -27,4 +27,9 @@ export const CollectionItemsContainer = styled.div`
       margin-bottom: unset;
     }
   }
+
+  @media screen and (max-width: 650px) {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
 `;

@@ -28,4 +28,10 @@ export const PreviewContainer = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
   }
+
+  @media screen and (max-width: 650px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
 `;

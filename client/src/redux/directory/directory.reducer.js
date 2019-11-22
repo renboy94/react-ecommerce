@@ -2,35 +2,40 @@ export const INITIAL_STATE = {
   sections: [
     {
       title: "hats",
-      imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+      imageUrl:
+        "https://mmv2api.s3.us-east-2.amazonaws.com/products/images/12150819_59FIFTY_CHARARMORCARNAGESCARLET_CARNAGE_SCA_3QR.jpg",
       id: 1,
       linkUrl: "shop/hats"
     },
     {
-      title: "jackets",
-      imageUrl: "https://i.ibb.co/px2tCc3/jackets.png",
+      title: "hoodies",
+      imageUrl:
+        "https://mmv2api.s3.us-east-2.amazonaws.com/products/images/2-image-hoodspdfllzpcost-1-productimagenowatermark.jpg",
       id: 2,
-      linkUrl: "shop/jackets"
+      linkUrl: "shop/hoodies"
     },
     {
-      title: "sneakers",
-      imageUrl: "https://i.ibb.co/0jqHpnp/sneakers.png",
+      title: "accessories",
+      imageUrl:
+        "https://mmv2api.s3.us-east-2.amazonaws.com/products/images/2-image-ringglglsymstl-1-productimagenowatermark.jpg",
       id: 3,
-      linkUrl: "shop/sneakers"
+      linkUrl: "shop/accessories"
     },
     {
-      title: "womens",
-      imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
+      title: "t-shirts",
+      imageUrl:
+        "https://mmv2api.s3-us-east-2.amazonaws.com/products/images/BM2934-AT.jpg",
       size: "large",
       id: 4,
-      linkUrl: "shop/womens"
+      linkUrl: "shop/t-shirts"
     },
     {
-      title: "mens",
-      imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
+      title: "toys",
+      imageUrl:
+        "https://mmv2api.s3.us-east-2.amazonaws.com/products/images/2-image-111087-1-productimagenowatermark.jpg",
       size: "large",
       id: 5,
-      linkUrl: "shop/mens"
+      linkUrl: "shop/toys"
     }
   ]
 };

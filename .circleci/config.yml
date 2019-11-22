@@ -39,7 +39,7 @@ jobs:
           paths:
             - /client/node_modules
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-{{ checksum "/client/package.json" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
@@ -49,7 +49,12 @@ jobs:
       - save_cache:
           paths:
             - /client/node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v1-dependencies-{{ checksum "/client/package.json" }}
 
       # run tests!
       - run: cd client && npm test
+
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            git push https://heroku:754e9617-36da-446c-b485-8f52232d097e@git.heroku.com/react-supr-shop.git master

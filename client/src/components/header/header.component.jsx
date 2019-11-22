@@ -20,8 +20,10 @@ import {
 export const Header = ({ currentUser, hidden, signOutStart }) => (
   <HeaderContainer>
     <LogoContainer to="/">
-      <Logo />
+      {/* <Logo /> */}
+      SUPR STUFF
     </LogoContainer>
+    {/* <OptionLink to="/shop">SHOP</OptionLink> */}
     <OptionsContainer>
       <OptionLink to="/shop">SHOP</OptionLink>
       {/* <OptionLink to="/shop">CONTACT</OptionLink> */}

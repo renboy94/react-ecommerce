@@ -30,6 +30,19 @@ export const CollectionItemContainer = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 650px) {
+    width: 80vw;
+
+    &:hover {
+      .image {
+        opacity: unset;
+      }
+      button {
+        opacity: unset;
+      }
+    }
+  }
 `;
 
 export const AddButton = styled(CustomButton)`
@@ -58,9 +71,10 @@ export const BackgroundImage = styled.div`
 
 export const CollectionFooterContainer = styled.div`
   width: 100%;
-  height: 5%;
+  // height: 5%;
   display: flex;
-  justify-content: space-between;
+  // justfify-content: space-between;
+  height: auto;
   font-size: 18px;
 `;
 
